@@ -1,3 +1,3 @@
-import Nav from "./nav";
+import Nav from "./header/nav";
 
 export { Nav };

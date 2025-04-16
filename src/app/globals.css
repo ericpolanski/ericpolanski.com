@@ -57,3 +57,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Doto';
+  src: url('/fonts/Doto-VariableFont_ROND,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font weight range */
+
+  font-style: normal;
+}
