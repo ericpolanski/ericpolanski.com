@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import NavItem from "@/components/atoms/navitem";
 
 export default function MobileSidebar() {
@@ -15,24 +16,28 @@ export default function MobileSidebar() {
         className="md:hidden text-gray-500 hover:text-gray-700 transition-colors duration-300"
         onClick={toggleSidebar}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <Image
+          src="/menu-icon.svg"
+          alt="Menu Icon"
+          width={32}
+          height={32}
+          className="cursor-pointer"
+        />
       </button>
 
       {isSidebarOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 flex flex-col items-center justify-center">
           <button
-            className="absolute top-4 right-4 text-white"
+            className="absolute top-4 right-4"
             onClick={toggleSidebar}
           >
-            Close
+            <Image
+              src="/cancel-icon.svg"
+              alt="Cancel Icon"
+              width={32}
+              height={32}
+              className="cursor-pointer hover:opacity-80 transition-opacity duration-300"
+            />
           </button>
           <nav className="text-white hover:text-gray-300 transition-colors duration-300 text-center">
             <ul className="space-y-5">

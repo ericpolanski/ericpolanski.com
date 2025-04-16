@@ -13,7 +13,7 @@ export default function Header() {
             Eric Polanski
           </h1>
         </Link>
-        <div className="flex items-center space-x-4">
+        <div>
           <div className="hidden md:block">
             <Nav />
           </div>
