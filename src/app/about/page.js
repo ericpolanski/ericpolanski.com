@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <>
-      <p>About placeholder.</p>
-    </>
+    <div className="pt-[80px]">
+      <p>About placeholder</p>
+    </div>
   );
 }
