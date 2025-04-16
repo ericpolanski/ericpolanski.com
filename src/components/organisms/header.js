@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="w-full fixed top-0 z-50">
-      <div className="flex justify-between items-center p-8 md:px-16">
+      <div className="flex justify-between items-center p-8 md:px-16 vertical-align:middle items-center">
       <Link href="/" className="group hover:text-gray-500 transition-colors duration-300 flex items-center">
         <Image
           src="../eraser.svg"
