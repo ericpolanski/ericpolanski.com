@@ -8,8 +8,8 @@ export default function Nav() {
             <ul
               style={{
                 fontFamily: 'Doto, sans-serif',
-                fontWeight: 500,
-                fontSize: '1.35rem',
+                fontWeight: 600,
+                fontSize: '1.8rem',
               }}
               className="flex space-x-5"
             >
