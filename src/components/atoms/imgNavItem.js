@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
+import Icon from "./icon";
 
-export default function ImageNavItem({ href, src, alt, size }) {
+export default function ImageNavItem({ href, name, alt, size }) {
   return (
     <Link
       target="_blank"
@@ -15,8 +15,8 @@ export default function ImageNavItem({ href, src, alt, size }) {
           height: `${size}px`,
         }}
       >
-        <Image
-          src={src}
+        <Icon
+          name={name}
           alt={alt}
           width={size}
           height={size}

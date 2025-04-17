@@ -3,18 +3,6 @@ import { useEffect, useState } from "react";
 import { NavItem, ImageNavItem } from "@/components/atoms/index";
 
 export default function Nav() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    const matchDark = window.matchMedia("(prefers-color-scheme: dark)");
-    setTheme(matchDark.matches ? "dark" : "light");
-
-    const handleChange = (e) => setTheme(e.matches ? "dark" : "light");
-    matchDark.addEventListener("change", handleChange);
-
-    return () => matchDark.removeEventListener("change", handleChange);
-  }, []);
-
   return (
     <div>
       <nav>
@@ -32,21 +20,13 @@ export default function Nav() {
           <NavItem href="/contact" text="Contact" />
           <ImageNavItem
             href="https://github.com/ericpolanski/"
-            src={
-              theme === "dark"
-                ? "/github-dotted-dark.svg"
-                : "/github-dotted.svg"
-            }
+            name="github"
             alt="GitHub Logo"
             size={50}
           />
           <ImageNavItem
             href="https://www.linkedin.com/in/ericpolanski/"
-            src={
-              theme === "dark"
-                ? "/linkedin-dotted-dark.svg"
-                : "/linkedin-dotted.svg"
-            }
+            name="linkedin"
             alt="LinkedIn Logo"
             size={50}
           />

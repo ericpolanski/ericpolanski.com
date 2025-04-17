@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import Icon from "@/components/atoms/icon";
 import NavItem from "@/components/atoms/navitem";
 
 export default function MobileSidebar() {
@@ -16,8 +16,8 @@ export default function MobileSidebar() {
         className="md:hidden text-gray-500 hover:text-gray-700 transition-colors duration-300"
         onClick={toggleSidebar}
       >
-        <Image
-          src="/menu-icon.svg"
+        <Icon
+          name="menu"
           alt="Menu Icon"
           width={32}
           height={32}
@@ -31,8 +31,8 @@ export default function MobileSidebar() {
             className="absolute top-4 right-4"
             onClick={toggleSidebar}
           >
-            <Image
-              src="/cancel-icon.svg"
+            <Icon
+              name="close"
               alt="Cancel Icon"
               width={32}
               height={32}

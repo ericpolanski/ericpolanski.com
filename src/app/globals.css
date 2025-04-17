@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0; /* Default text color (black) */
-  --background-start-rgb: 214, 219, 220; /* Default background gradient start */
+  --background-start-rgb: 255, 255, 255; /* Default background gradient start */
   --background-end-rgb: 255, 255, 255; /* Default background gradient end */
 
   --primary: #007bff;
@@ -37,24 +37,6 @@
     --danger: #a71d2a;
     --onDanger: #ffffff;
     --dangerHover: #8b1a22;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .github-logo {
-    content: url('/github-dotted-dark.svg');
-  }
-  .linkedin-logo {
-    content: url('/linkedin-dotted-dark.svg');
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .github-logo {
-    content: url('/github-dotted.svg');
-  }
-  .linkedin-logo {
-    content: url('/linkedin-dotted.svg');
   }
 }
 
