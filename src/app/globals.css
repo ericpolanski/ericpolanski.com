@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0; /* Default text color (black) */
+  --background-start-rgb: 214, 219, 220; /* Default background gradient start */
+  --background-end-rgb: 255, 255, 255; /* Default background gradient end */
 
   --primary: #007bff;
   --onPrimary: #ffffff;
@@ -21,6 +21,10 @@
 }
 
 [data-theme='dark'] {
+  --foreground-rgb: 255, 255, 255; /* Text color for dark mode (white) */
+  --background-start-rgb: 0, 0, 0; /* Background gradient start for dark mode */
+  --background-end-rgb: 34, 34, 34; /* Background gradient end for dark mode */
+
   --primary: #375a7f;
   --onPrimary: #ffffff;
   --primaryHover: #2c3e50;
@@ -34,16 +38,8 @@
   --dangerHover: #8b1a22;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #000000;
   background: #ffffff;
 }
 
@@ -57,6 +53,5 @@ body {
   font-family: 'Doto';
   src: url('/fonts/Doto-VariableFont_ROND,wght.ttf') format('truetype');
   font-weight: 100 900; /* Variable font weight range */
-
   font-style: normal;
 }

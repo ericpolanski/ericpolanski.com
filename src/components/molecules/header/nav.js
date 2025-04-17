@@ -10,7 +10,7 @@ export default function Nav() {
                 fontFamily: 'Doto, sans-serif',
                 fontWeight: 600,
                 fontSize: '1.8rem',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               className="flex space-x-5"
             >

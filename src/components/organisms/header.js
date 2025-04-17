@@ -17,7 +17,7 @@ export default function Header() {
           className="group-hover:grayscale transition duration-300"
         />
         <h1
-          className="text-black group-hover:text-gray-500 transition duration-300"
+          className="group-hover:text-gray-500 transition duration-300"
           style={{ fontFamily: 'Doto, sans-serif', fontSize: '2.5rem', fontWeight: 800, marginTop: '5px', marginLeft: '10px' }}
         >
           Eric Polanski
