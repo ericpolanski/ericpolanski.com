@@ -20,6 +20,14 @@
   --dangerHover: #c82333;
 }
 
+body {
+  background-color: rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
+  background-image: url('/bg-pattern.svg');
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255; /* Text color for dark mode (white) */
@@ -38,12 +46,12 @@
     --onDanger: #ffffff;
     --dangerHover: #8b1a22;
   }
+
+  body {
+    background-image: url('/bg-pattern-dark.svg');
+  }
 }
 
-body {
-  background: rgb(var(--background-start-rgb));
-  color: rgb(var(--foreground-rgb));
-}
 
 @layer utilities {
   .text-balance {
