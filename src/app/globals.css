@@ -23,6 +23,9 @@
 body {
   background-color: rgb(var(--background-start-rgb));
   color: rgb(var(--foreground-rgb));
+  /* Smooth transition when theme changes */
+  /* Smooth transition when theme changes */
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   background-image: url('/bg-pattern.svg');
   background-repeat: repeat;
   background-size: 300px 300px;
@@ -64,4 +67,43 @@ body {
   src: url('/fonts/Doto-VariableFont_ROND,wght.ttf') format('truetype');
   font-weight: 100 900; /* Variable font weight range */
   font-style: normal;
+  /* Improve font loading performance */
+  font-display: swap;
+}
+
+/* Theme overrides based on data-theme attribute */
+html[data-theme="light"] {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --primary: #007bff;
+  --onPrimary: #ffffff;
+  --primaryHover: #0056b3;
+  --secondary: #6c757d;
+  --onSecondary: #ffffff;
+  --secondaryHover: #5a6268;
+  --danger: #dc3545;
+  --onDanger: #ffffff;
+  --dangerHover: #c82333;
+}
+html[data-theme="light"] body {
+  background-image: url('/bg-pattern.svg');
+}
+
+html[data-theme="dark"] {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 34, 34, 34;
+  --primary: #375a7f;
+  --onPrimary: #ffffff;
+  --primaryHover: #2c3e50;
+  --secondary: #444;
+  --onSecondary: #ffffff;
+  --secondaryHover: #333;
+  --danger: #a71d2a;
+  --onDanger: #ffffff;
+  --dangerHover: #8b1a22;
+}
+html[data-theme="dark"] body {
+  background-image: url('/bg-pattern-dark.svg');
 }

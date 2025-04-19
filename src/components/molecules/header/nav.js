@@ -1,11 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import { NavItem, ImageNavItem } from "@/components/atoms/index";
+import ThemeToggle from '@/components/atoms/theme-toggle';
 
 export default function Nav() {
   return (
     <div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul
           style={{
             fontFamily: "Doto, sans-serif",
@@ -17,6 +18,7 @@ export default function Nav() {
         >
           <NavItem href="/about" text="About" />
           <NavItem href="/projects" text="Projects" />
+          <NavItem href="/resume" text="Resume" />
           <NavItem href="/contact" text="Contact" />
           <ImageNavItem
             href="https://github.com/ericpolanski/"
@@ -30,6 +32,9 @@ export default function Nav() {
             alt="LinkedIn Logo"
             size={50}
           />
+          <li className="flex items-center">
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
     </div>

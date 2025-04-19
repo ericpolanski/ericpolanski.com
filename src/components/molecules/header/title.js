@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Icon from "@/components/atoms/icon";
+import { resume } from "@/data/resume";
 
 export default function Header() {
     return (
@@ -14,7 +15,7 @@ export default function Header() {
             className="group-hover:text-gray-500 transition duration-300"
             style={{ fontFamily: 'Doto, sans-serif', fontSize: '2.5rem', fontWeight: 800, marginLeft: '10px' }}
         >
-        Eric Polanski
+        {resume.name}
         </h1>
     </Link>
     )

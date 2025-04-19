@@ -5,7 +5,7 @@ import Title from "../molecules/header/title";
 
 export default function Header() {
   return (
-    <header className="w-full fixed top-0 z-50 bg-[rgb(var(--background-start-rgb))]">
+    <header className="w-full fixed top-0 z-50 bg-[rgb(var(--background-start-rgb))] transition-colors duration-500 ease-in-out">
       <div className="flex justify-between items-center p-8 md:px-16 vertical-align:middle items-center">
         <Title />
         <div>

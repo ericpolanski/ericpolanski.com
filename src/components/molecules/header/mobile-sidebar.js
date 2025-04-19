@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Icon from "@/components/atoms/icon";
 import NavItem from "@/components/atoms/navitem";
+import ThemeToggle from '@/components/atoms/theme-toggle';
 
 export default function MobileSidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function MobileSidebar() {
       <button
         className="md:hidden text-gray-500 hover:text-gray-700 transition-colors duration-300"
         onClick={toggleSidebar}
+        aria-label="Open menu"
       >
         <Icon
           name="menu"
@@ -30,6 +32,7 @@ export default function MobileSidebar() {
           <button
             className="absolute top-4 right-4"
             onClick={toggleSidebar}
+            aria-label="Close menu"
           >
             <Icon
               name="close"
@@ -39,10 +42,11 @@ export default function MobileSidebar() {
               className="cursor-pointer hover:opacity-80 transition-opacity duration-300"
             />
           </button>
-          <nav className="text-white hover:text-gray-300 transition-colors duration-300 text-center">
+          <nav aria-label="Mobile navigation" className="text-white hover:text-gray-300 transition-colors duration-300 text-center">
             <ul className="space-y-5">
               <NavItem href="/about" text="About" />
               <NavItem href="/projects" text="Projects" />
+              <NavItem href="/resume" text="Resume" />
               <NavItem href="/contact" text="Contact" />
               <li>
                 <a
@@ -61,6 +65,9 @@ export default function MobileSidebar() {
                 >
                   LinkedIn
                 </a>
+              </li>
+              <li className="flex items-center justify-center">
+                <ThemeToggle />
               </li>
             </ul>
           </nav>
