@@ -26,7 +26,8 @@ export default function RootLayout({ children }) {
   const cookieStore = cookies();
   const themeCookie = cookieStore.get('theme')?.value;
   // Only use valid values
-  const initialTheme = themeCookie === 'dark' || themeCookie === 'light' ? themeCookie : undefined;
+  // Use stored theme if available, otherwise default to dark mode
+  const initialTheme = themeCookie === 'dark' || themeCookie === 'light' ? themeCookie : 'dark';
   return (
     <html lang="en" data-theme={initialTheme}>
       <body className={inter.className}>

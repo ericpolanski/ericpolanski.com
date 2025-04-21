@@ -15,12 +15,13 @@ export default function useTheme() {
 
   // Determine initial theme: stored preference or system
   const getInitialTheme = () => {
-    if (typeof window === 'undefined') return 'light';
+    if (typeof window === 'undefined') return 'dark';
     const stored = window.localStorage.getItem('theme');
     if (stored === 'light' || stored === 'dark') {
       return stored;
     }
-    return prefersDark ? 'dark' : 'light';
+    // Default to dark mode if no stored preference
+    return 'dark';
   };
 
   const [theme, setTheme] = useState(getInitialTheme);
