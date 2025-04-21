@@ -7,6 +7,7 @@ import { Header } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const runtime = 'edge';
 export const metadata = {
   title: "Eric Polanski",
   description: "Eric Polanski Portfolio Website",
