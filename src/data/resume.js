@@ -81,6 +81,10 @@ export const resume = {
       start: 'January 2025',
       end: 'March 2025',
       description: 'Utilized OpenAI models to create a teddy bear which uses AI to converse with a child.',
+      thumbnail: '/projects/teddy-talk.png',
+      badges: ['OpenAI', 'Next.js', 'React'],
+      liveUrl: 'https://example.com/teddy-talk',
+      repoUrl: 'https://github.com/ericpolanski/teddy-talk',
     },
     {
       title: 'Walkies',
@@ -89,6 +93,10 @@ export const resume = {
       start: 'September 2024',
       end: 'December 2024',
       description: 'Designed a user interface for a mobile app to connect with students.',
+      thumbnail: '/projects/walkies.png',
+      badges: ['React Native', 'Firebase', 'TypeScript'],
+      liveUrl: 'https://example.com/walkies',
+      repoUrl: 'https://github.com/ericpolanski/walkies',
     },
     {
       title: 'Lumi-Ride',
@@ -97,6 +105,10 @@ export const resume = {
       start: 'January 2024',
       end: 'May 2024',
       description: 'Created a wheelchair illumination device to improve the ability of cerebral palsy patients with impaired dexterity to navigate in a motorized wheelchair.',
+      thumbnail: '/projects/lumi-ride.png',
+      badges: ['Arduino', 'LED', '3D Printing'],
+      liveUrl: 'https://example.com/lumi-ride',
+      repoUrl: 'https://github.com/ericpolanski/lumi-ride',
     },
     {
       title: 'FrostGuard',
@@ -105,6 +117,10 @@ export const resume = {
       start: 'January 2024',
       end: 'May 2024',
       description: 'Modified a chicken coop to reduce freezing in the chicken drinking system.',
+      thumbnail: '/projects/frostguard.png',
+      badges: ['Mechanical Design', 'Thermal Analysis'],
+      liveUrl: 'https://example.com/frostguard',
+      repoUrl: 'https://github.com/ericpolanski/frostguard',
     },
   ],
 };

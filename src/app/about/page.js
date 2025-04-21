@@ -3,9 +3,9 @@ import { resume } from '@/data/resume';
 
 export default function About() {
   return (
-    <section className="pt-[80px] w-full flex justify-center px-4">
+    <section className="pt-[var(--header-height)] w-full flex justify-center px-4">
       <div className="max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8">About</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-balance">About</h1>
         <div className="flex flex-col md:flex-row items-start md:space-x-12">
           {/* Image section */}
           <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
@@ -18,28 +18,32 @@ export default function About() {
             />
           </div>
           {/* Text sections */}
-          <div className="w-full md:w-1/2 space-y-8">
+          <div className="w-full md:w-1/2 space-y-8 max-w-prose">
             <section>
-              <h2 className="text-2xl font-semibold mb-3">Academic Background</h2>
+              <h2 className="text-2xl font-semibold mb-3 text-balance">Academic Background</h2>
               <p className="text-base leading-relaxed">
-                I began my academic career at the College of Lake County, where I completed 56 credits toward a bachelor’s degree with a 3.9 GPA, receiving a certificate of Academic Distinction. 
-                During my time there, I founded the Chess Club and served as Student Government President, leading initiatives that improved campus life and being recognized as the most influential student on campus.
+                I began my academic career at the College of Lake County, completing 56 credits toward a bachelor’s degree with a 3.9 GPA and a certificate of Academic Distinction.
               </p>
-              <br />
-              <p> 
-                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science. 
-                At Northwestern, I immerse myself in rigorous, but fascinating, coursework, serve on the Computer Science Advisory Council, and have become a mentor for the Computer Science Peer Mentor Program.
+              <ul className="list-disc list-inside pl-4 mb-4 space-y-1 text-base leading-relaxed">
+                <li>Founded the Chess Club</li>
+                <li>Served as Student Government President</li>
+                <li>Recognized as the most influential student on campus</li>
+              </ul>
+              <p className="text-base leading-relaxed">
+                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science. At Northwestern, I immerse myself in rigorous coursework, serve on the Computer Science Advisory Council, and mentor new students through the Computer Science Peer Mentor Program.
               </p>
             </section>
             <section>
-              <h2 className="text-2xl font-semibold mb-3">Personal Life & Interests</h2>
+              <h2 className="text-2xl font-semibold mb-3 text-balance">Personal Life & Interests</h2>
               <p className="text-base leading-relaxed">
-                {/* Listing extracurricular activities as personal interests */}
-                In my free, you'll find me engaging in a variety of activities that keep me balanced and inspired. 
-                I love to travel, explore new cultures, and immerse myself in different environments. 
-                Whether it's hiking in the mountains or relaxing on a beach, I find joy in nature's beauty. 
-                I'm also an avid reader, always seeking new perspectives and ideas through books.
+                In my free time, I enjoy:
               </p>
+              <ul className="list-disc list-inside pl-4 space-y-1 text-base leading-relaxed">
+                <li>Traveling and exploring new cultures</li>
+                <li>Hiking in nature</li>
+                <li>Relaxing on beaches</li>
+                <li>Reading books to gain new perspectives</li>
+              </ul>
             </section>
           </div>
         </div>

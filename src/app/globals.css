@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0; /* Default text color (black) */
   --background-start-rgb: 255, 255, 255; /* Default background gradient start */
   --background-end-rgb: 255, 255, 255; /* Default background gradient end */
+  --header-height: 80px;                 /* Height of fixed header (used for content offset) */
 
   --primary: #007bff;
   --onPrimary: #ffffff;
@@ -60,6 +61,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* Animated underline for hero name */
+  .underline-animate {
+    position: relative;
+    display: inline-block;
+  }
+  .underline-animate::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: underline 1s ease-out forwards;
+  }
+  @keyframes underline {
+    to { transform: scaleX(1); }
+  }
 }
 
 @font-face {
@@ -106,4 +127,15 @@ html[data-theme="dark"] {
 }
 html[data-theme="dark"] body {
   background-image: url('/bg-pattern-dark.svg');
+}
+
+/* Fallback: invert nav icons for system dark mode before JS theme initialization */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .nav-icon {
+    filter: invert(1) brightness(1);
+  }
+}
+/* Invert nav icons whenever dark theme is active */
+html[data-theme="dark"] .nav-icon {
+  filter: invert(1) brightness(1);
 }

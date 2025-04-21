@@ -42,8 +42,11 @@ export default function useTheme() {
 
   // Apply theme attribute, persist, and notify on changes
   useEffect(() => {
+    // Apply to root attribute
     document.documentElement.setAttribute('data-theme', theme);
+    // Persist preference in localStorage and cookie for SSR
     window.localStorage.setItem('theme', theme);
+    document.cookie = `theme=${theme}; path=/; max-age=${60 * 60 * 24 * 365}`;
     // Notify all other hook instances
     window.dispatchEvent(new Event(THEME_CHANGE));
   }, [theme]);
