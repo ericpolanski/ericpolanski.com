@@ -17,7 +17,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <hr className="hidden md:block border-t-2 border-dotted border-gray-500 mt-[-20px]" />
+      <hr className="hidden md:block border-t-2 border-dotted border-[rgb(var(--foreground-rgb))] mt-[-20px]" />
     </header>
   );
 }

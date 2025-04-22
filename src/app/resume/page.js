@@ -16,7 +16,7 @@ export default function ResumePage() {
       <div className="w-full max-w-4xl h-[80vh]">
         <iframe
           src="/eric_polanski_resume_april_2025.pdf#toolbar=0"
-          className="w-full h-full border-none"
+          className="w-full h-full border-2 border-[rgb(var(--foreground-rgb))]"
         />
       </div>
     </section>

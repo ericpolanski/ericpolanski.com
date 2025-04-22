@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { resume } from '@/data/resume';
 
 export default function About() {
   return (

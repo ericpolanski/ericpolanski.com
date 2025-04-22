@@ -1,4 +1,3 @@
-import { resume } from '@/data/resume';
 import { ProjectCard } from '@/components';
 
 export default function Projects() {
