@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Design Doc – Personal Portfolio
 
-## Getting Started
+**[Live Website - ericpolanski.com](ericpolanski.com)**
 
-First, run the development server:
+## Overview / Background
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This personal portfolio project gave me the opportunity to reflect on how I want to present myself online. 
+I asked: *What do I want in a website? How do I want others to experience it?* 
+These questions became the foundation of my design and development approach.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Core goals:
+- Showcase my frontend development skills  
+- Share my academic and professional story  
+- Highlight projects and resume  
+- Provide a call-to-action (e.g., contact form)  
+- Deploy a live, production-ready site  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Pages:
+- **Home** – Clean intro and value proposition  
+- **About Me** – Personal and professional background  
+- **Projects** – Visual display of work  
+- **Resume** – Downloadable/viewable PDF  
+- **Contact** – Easy way to reach me  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## Technical Problem Statement
 
-To learn more about Next.js, take a look at the following resources:
+I began with the provided basic Next.js template and minimal experience with React, Next.js, JavaScript, and Tailwind CSS. 
+So my objective was to learn and apply these technologies in a practical context.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key features:
+- Shared layout components (Header, Footer, Background)
+- A visually engaging homepage
+- Clear, organized content per section
+- A hosted, accessible domain: **ericpolanski.com**
+- Automated deployment pipeline with Cloudflare
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Design Approach
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I approached the build iteratively—focusing first on structure, then gradually improving aesthetics and functionality.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Development Strategy:
+1. **Chunked development:**  
+   Started with the `Header` for navigation and created placeholder routes for all major pages. Built out individual pages one at a time, revisiting previous work to refine UI/UX.
+
+2. **Component organization:**  
+   Initially, all code lived in a single file within the `organisms` directory.
+   Over time, I refactored repetitive sections into reusable components—first moving large pieces into `molecules`, then simplifying repeated patterns into `atoms`.
+   I still have more work to do in this department though :)
+
+4. **State management:**  
+   I opted not to use dependency injection since prop drilling was shallow (usually no more than two levels). Local state within components was sufficient for my needs.
+
+5. **Design patterns:**  
+   The component-based architecture naturally followed the module design pattern.
+   I also used composition patterns when combining smaller UI elements into larger, reusable structures.
+
+7. **Rendering strategy:**  
+   I used a hybrid approach, mostly SSR since it's the default for Next.js, but some CSR was used.
+
+---
+
+## Challenges & Solutions
+
+- **Layout and alignment issues:**  
+  One of the most annoying issues for me was debugging with Tailwind.
+  Many of my components wouldn't align with one another, and so to debug this I researched, attended office hours, and, when stuck, leaned on Copilot for guidance.
+
+- **Theme Handling:**
+  Another big issue was correctly configuring the theme when it was in dark & light mode.
+  I didn't realize how many considersations had to be made to make this seemingly simple feature setup correctly.
+
+- **Time constraints & AI Usage:**  
+  Early development was fully manual. But as the deadline quickly approached, I introduced **Copilot** and **OpenAI Codex** to help with code suggestions and refactors.
+  I further used **ChatGPT** to help polish the wording in this README.
+
+---
+
+## Deployment & Hosting
+
+To further legitamize this project, I purchased the [ericpolanski.com](ericpolanski.com) domain and hosted the site through **Cloudflare Pages**. 
+I also set up **automatic deployments** via Git pushes to streamline updates.
+
+---
+
+## Reflection
+
+> “The journey, not the destination, matters…” – T.S. Eliot
+
+This project isn’t finished, but thus far, it’s been a rewarding and creative experience. 
+I still a ton of features I want to add such as, more user interaction, better security implementations, etc. 
+Addititonally I plan to implement the feedback you guys provide, but I’m proud of the progress and excited about continuing the journey!
+
