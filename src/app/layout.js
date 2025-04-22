@@ -4,6 +4,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { cookies } from 'next/headers';
 import { Header } from "@/components";
+import { Footer } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,9 @@ export const metadata = {
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
   },
-  // Ensure responsive behavior on mobile devices
-  viewport: 'width=device-width, initial-scale=1',
 };
+
+export const viewport = 'width=device-width, initial-scale=1';
 
 export default function RootLayout({ children }) {
   // Read theme from cookie for initial SSR render
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme={initialTheme}>
       <body className={inter.className}>
+        {/* This accessibility idea and implementation is from OpenAI's o4-mini model */}
         {/* Skip link for keyboard and screen-reader users */}
         <a
           href="#main"
@@ -43,6 +45,7 @@ export default function RootLayout({ children }) {
         <main id="main" className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

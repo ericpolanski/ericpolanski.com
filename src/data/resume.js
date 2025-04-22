@@ -81,7 +81,7 @@ export const resume = {
       start: 'January 2025',
       end: 'March 2025',
       description: 'Utilized OpenAI models to create a teddy bear which uses AI to converse with a child.',
-      thumbnail: '/projects/teddy-talk.png',
+      thumbnail: '/projects/TeddyTalk.png',
       badges: ['OpenAI', 'Next.js', 'React'],
       liveUrl: 'https://example.com/teddy-talk',
       repoUrl: 'https://github.com/ericpolanski/teddy-talk',

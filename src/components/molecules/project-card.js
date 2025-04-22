@@ -7,12 +7,25 @@ import Link from "next/link";
  */
 export default function ProjectCard({ project }) {
   return (
-    <div className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-lg hover:scale-105">
+    <div
+    className="
+        group
+        text-sm
+        bg-[rgb(var(--background-start-rgb))]
+        border border-white dark:border-gray-700
+        shadow
+        px-2 py-1
+        rounded-lg
+        overflow-hidden
+        transform transition duration-300
+        hover:shadow-lg hover:scale-105
+      "
+    >
       {project.thumbnail && (
         <div className="relative w-full h-48">
           <Image
             src={project.thumbnail}
-            alt={`${project.title} thumbnail`}
+            alt={`Thumbnails are a work in progress`}
             fill
             className="object-cover group-hover:opacity-90 transition-opacity duration-300"
             priority={false}
@@ -26,7 +39,7 @@ export default function ProjectCard({ project }) {
             {project.badges.map((badge, i) => (
               <span
                 key={i}
-                className="text-sm bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded"
+                className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition"
               >
                 {badge}
               </span>

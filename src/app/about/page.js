@@ -22,15 +22,10 @@ export default function About() {
             <section>
               <h2 className="text-2xl font-semibold mb-3 text-balance">Academic Background</h2>
               <p className="text-base leading-relaxed">
-                I began my academic career at the College of Lake County, completing 56 credits toward a bachelor’s degree with a 3.9 GPA and a certificate of Academic Distinction.
+                I began my post-secondary academic journey at the College of Lake County in 2021, completing two years of courses toward my Bachelors, receiving a certificate of Academic Distinction.
               </p>
-              <ul className="list-disc list-inside pl-4 mb-4 space-y-1 text-base leading-relaxed">
-                <li>Founded the Chess Club</li>
-                <li>Served as Student Government President</li>
-                <li>Recognized as the most influential student on campus</li>
-              </ul>
               <p className="text-base leading-relaxed">
-                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science. At Northwestern, I immerse myself in rigorous coursework, serve on the Computer Science Advisory Council, and mentor new students through the Computer Science Peer Mentor Program.
+                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science at the McCormick School of Engineering.
               </p>
             </section>
             <section>
@@ -39,10 +34,10 @@ export default function About() {
                 In my free time, I enjoy:
               </p>
               <ul className="list-disc list-inside pl-4 space-y-1 text-base leading-relaxed">
-                <li>Traveling and exploring new cultures</li>
-                <li>Hiking in nature</li>
-                <li>Relaxing on beaches</li>
-                <li>Reading books to gain new perspectives</li>
+                <li>Traveling and exploring new countries & cultures</li>
+                <li>Biking and hiking</li>
+                <li>Going to the gym</li>
+                <li>Reading books</li>
               </ul>
             </section>
           </div>
