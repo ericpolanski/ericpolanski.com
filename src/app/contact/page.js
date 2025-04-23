@@ -33,6 +33,9 @@ export default function Contact() {
     <section className="pt-[var(--header-height)] w-full flex justify-center px-4">
       <div className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact</h1>
+        <p className="text-lg mb-4">
+          I'd love to hear from you! If you have any inquiries, requests, or anything else, please reach out.
+        </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             name="name"

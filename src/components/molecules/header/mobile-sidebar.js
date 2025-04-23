@@ -55,7 +55,6 @@ export default function MobileSidebar() {
             <ul className="text-[rgb(var(--foreground-rgb))] space-y-5">
                 <NavItem href="/about" text="About" />
                 <NavItem href="/projects" text="Projects" />
-                <NavItem href="/resume" text="Resume" />
                 <NavItem href="/contact" text="Contact" />
                 <li>
                   <a
