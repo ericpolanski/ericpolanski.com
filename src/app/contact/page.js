@@ -13,8 +13,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
 
-    // Formsubmit AJAX endpoint for your email:
-    const endpoint = 'https://formsubmit.co/ajax/contact@ericpolanski.com';
+    const endpoint = 'https://formsubmit.co/ajax/1171b4a69913f3628b473032dcdcd58f';
     const payload = new FormData();
     Object.entries(form).forEach(([k, v]) => payload.append(k, v));
 
