@@ -21,16 +21,18 @@ export default function Home() {
         <div className="w-full md:w-1/2 max-w-prose">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 underline-animate text-balance">
             Hi, I'm <br />
-            <span className="underline-animate">Eric Polanski</span>
+            <span className="underline-animate">Erci Polanski</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-500 italic mb-4">
-            Full-Stack Engineer specializing in React & Data‑Driven UIs
+            Alpha Male Coach
           </p>
           <p className="text-lg leading-relaxed">
-            I'm a Full-Stack Software Engineer with expertise across both front-end and back-end development.
+             Have you ever felt weak, insecure, or just plain sad? Well, I have the solution for you! 
+             As a N̸͓̭̏C̸̨͊͝Ā̸̖͔́Á̸̱ ̷̻̲͝C̸̦̿̊e̸͙͐̅r̷̲̪͋t̶͉͐͝i̴̧̅͆f̴͔̲͊̽i̷͎̙̚e̵̢̛̲ḑ̷̯̆͑ Alpha Male Coach, I WILL make you the best version of yourself.
+             Rates starting at $174.99 per hour.
           </p>
           <p className="text-lg leading-relaxed">
-            I craft end-to-end solutions that merge intuitive user interfaces with robust, scalable systems to deliver impactful products.
+            
           </p>
           {/* Call-to-action */}
           <div className="mt-6 flex space-x-4">
@@ -39,7 +41,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-primary text-onPrimary rounded shadow hover:bg-primaryHover transition"
             >
-              View Resume
+              Beocme Lengedary
             </a>
           </div>
         </div>
