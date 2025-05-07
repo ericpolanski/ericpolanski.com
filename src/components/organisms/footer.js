@@ -1,4 +1,3 @@
-"use client";
 import ImageNavItem from '@/components/atoms/imgNavItem';
 
 export default function Footer() {

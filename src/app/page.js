@@ -8,7 +8,7 @@ export default function Home() {
       <div className="max-w-4xl w-full flex flex-col md:flex-row items-center md:space-x-8">
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <Image
-            src="/eric-images/eric-profile.jpg"
+            src="/eric-images/eric-podium.jpg"
             alt="Eric's professional headshot"
             width={400}
             height={400}

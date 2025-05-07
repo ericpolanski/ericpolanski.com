@@ -1,3 +1,5 @@
+import Skills from "@/components/molecules/skills"
+
 export default function ResumeInfo() {
     return (
       <div className="max-w-4xl w-full mt-12 space-y-12">
@@ -92,39 +94,24 @@ export default function ResumeInfo() {
           <div className="space-y-6">
             {/* Programming */}
             <div key="Programming" className="w-full">
-              {/* Label */}
               <div className="mb-2">
                 <span className="font-semibold capitalize">Programming</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">Python</span>
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">R</span>
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">C++</span>
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">C</span>
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">CSS</span>
-                <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">React</span>
-              </div>
+              <Skills skills={["Python", "R", "C++", "C", "CSS", "React"]} />
             </div>
             {/* Computer */}
             <div key="Computer" className="w-full">
               <div className="mb-2">
                 <span className="font-semibold capitalize">Computer</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-              <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">Excel</span>
-              <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">Word</span>
-              <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">PowerPoint</span>
-              </div>
+              <Skills skills={["Excel", "Word", "PowerPoint"]} />
             </div>
             {/* Languages */}
             <div key="Languages" className="w-full">
               <div className="mb-2">
                 <span className="font-semibold capitalize">Languages</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-              <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">English</span>
-              <span className="text-sm bg-primary text-onPrimary rounded shadow px-2 py-1 rounded transition">Polish</span>
-              </div>
+              <Skills skills={["English", "Polish"]} />
             </div>
           </div>
         </section>
