@@ -24,7 +24,7 @@ export default function About() {
                 I began my post-secondary academic journey at the College of Lake County in 2021, completing two years of courses toward my Bachelors, receiving a certificate of Academic Distinction.
               </p>
               <p className="text-base leading-relaxed">
-                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science at the McCormick School of Engineering.
+                In 2023, I transferred to Northwestern University to pursue a Bachelor of Science in Computer Science with a concentration in Artificial Intelligence at the McCormick School of Engineering.
               </p>
             </section>
             <section>
@@ -35,7 +35,7 @@ export default function About() {
               <ul className="list-disc list-inside pl-4 space-y-1 text-base leading-relaxed">
                 <li>Traveling and exploring new countries & cultures</li>
                 <li>Biking and hiking</li>
-                <li>Going to the gym</li>
+                <li>Studying football film</li>
                 <li>Reading books</li>
               </ul>
             </section>

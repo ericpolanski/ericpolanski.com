@@ -1,4 +1,4 @@
-import Skills from "@/components/molecules/skills"
+import Skills from "@/components/molecules/skills";
 
 export default function ResumeInfo() {
     return (
@@ -15,9 +15,9 @@ export default function ResumeInfo() {
                 June 2024 - August 2024, North Chicago, IL
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Developed a pipeline to create gene regulatory networks using single-cell RNA-seq & ATAC-seq data.</li>
-                <li>Modified analysis algorithms which helped find key information over 25% more accurately.</li>
-                <li>Created and hosted databases to communicate previous group analysis.</li>
+                <li>Engineered an automated data pipeline for constructing gene regulatory networks from single-cell RNA sequencing data using Python, significantly streamlining data processing and downstream analysis workflows. </li>
+                <li>Optimized analysis algorithms enhancing key biological markers achieving a 25% improvement in detection accuracy over established baselines. </li>
+                <li>Designed, and maintained relational databases to centralize and automate access to historical genomics analyses, improving data retrieval and inter-team collaboration. </li>
               </ul>
             </div>
             <div key= "Bioinformatics Intern 2023">
@@ -28,9 +28,9 @@ export default function ResumeInfo() {
                 June 2023 - August 2023, North Chicago, IL
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Built a script to automate the visualization of genomic data on servers.</li>
-                <li>Improved efficiency of adding data to proprietary software by 90%.</li>
-                <li>Demonstrated strong problem-solving skills by addressing technical challenges related to data integration, formatting, and visualization compatibility.</li>
+                <li>Developed and deployed a script leveraging to automate the generation of genomics data visualizations on server-side hosting. </li>
+                <li>Achieved 90% reduction in data processing time and minimized entry errors. </li>
+                <li>Resolved technical challenges in data integration and cross-platform formatting, ensuring seamless automated data flow and visualization compatibility for diverse genomics datasets. </li>
               </ul>
             </div>
             <div key= "Public Relations and Marketing Student Worker">
@@ -41,10 +41,9 @@ export default function ResumeInfo() {
                 September 2021 - May 2023
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Maintain the college website using content creation tools, management tools, and digital media.</li>
-                <li>Resolved over 700 requests from college employees desiring various web updates.</li>
-                <li>Conducted assessments of code to verify its validity, appropriate structure, adherence to industry standards, and compatibility with browsers, devices, and operating systems.</li>
-                <li>Recipient of 2022 College of Lake County Purpose Award</li>
+                <li>Maintain the college website using content creation tool and management tools. </li>
+                <li>Managed and prioritized over 700 technical support requests for web updates, ensuring timely resolution and stakeholder satisfaction. </li>
+                <li>Recipient of 2022 College of Lake County Purpose Award </li>
               </ul>
             </div>
           </div>
@@ -61,11 +60,10 @@ export default function ResumeInfo() {
                 September 2023 - December 2025
               </p>
               <p className="text-base leading-relaxed mb-2">
-                Bachelor of Science, Computer Science, GPA 3.2/4.0
+                Bachelor of Science, Computer Science, GPA 3.2/4.0 
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Computer Science Advisory Council Member</li>
-                <li>Computer Science Peer Mentor</li>
+                <li>Computer Science Advisory Council Member </li>
               </ul>
             </div>
             <div key="College of Lake County">
@@ -76,14 +74,13 @@ export default function ResumeInfo() {
                 August 2021 - July 2023
               </p>
               <p className="text-base leading-relaxed mb-2">
-                Completed 56 credits towards bachelor's degree, GPA 3.9/4.0
+                Completed 56 credits towards Bachelor’s degree, GPA 3.9/4.0 
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Student Government President</li>
-                <li>Chess Club Founder</li>
-                <li>Phi Theta Kappa Honors Society Member</li>
-                <li>Governance Coordinating Council Member</li>
-                <li>Student Success Council Member</li>
+                <li>Student Government President </li>
+                <li>Chess Club Founder </li>
+                <li>Phi Theta Kappa Honors Society Member </li>
+                <li>Governance Coordinating Council Member </li>
               </ul>
             </div>
           </div>
@@ -92,26 +89,26 @@ export default function ResumeInfo() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-balance">Skills</h2>
           <div className="space-y-6">
-            {/* Programming */}
-            <div key="Programming" className="w-full">
+            {/* Programming Languages */}
+            <div key="Programming Languages" className="w-full">
               <div className="mb-2">
-                <span className="font-semibold capitalize">Programming</span>
+                <span className="font-semibold capitalize">Programming Languages</span>
               </div>
-              <Skills skills={["Python", "R", "C++", "C", "CSS", "React"]} />
+              <Skills skills={["Python", "JavaScript/TypeScript", "Java", "C++", "R"]} />
             </div>
-            {/* Computer */}
-            <div key="Computer" className="w-full">
+            {/* AI/ML Technologies & Frameworks */}
+            <div key="AI/ML Technologies & Frameworks" className="w-full">
               <div className="mb-2">
-                <span className="font-semibold capitalize">Computer</span>
+                <span className="font-semibold capitalize">AI/ML Technologies & Frameworks</span>
               </div>
-              <Skills skills={["Excel", "Word", "PowerPoint"]} />
+              <Skills skills={["Google Gemini API", "OpenAI API", "TensorFlow", "Zapier"]} />
             </div>
-            {/* Languages */}
-            <div key="Languages" className="w-full">
+            {/* Developer Tools & Platforms */}
+            <div key="Developer Tools & Platforms" className="w-full">
               <div className="mb-2">
-                <span className="font-semibold capitalize">Languages</span>
+                <span className="font-semibold capitalize">Developer Tools & Platforms</span>
               </div>
-              <Skills skills={["English", "Polish"]} />
+              <Skills skills={["Git", "Docker", "VS Code", "Jupyter Notebooks"]} />
             </div>
           </div>
         </section>

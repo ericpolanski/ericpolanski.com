@@ -26,53 +26,53 @@ export default function Projects() {
           />
 
           <ProjectCard
-            key="Walkies"
+            key="DoughJo"
             project={{
-              title: 'Walkies',
-              course: 'COMP_SCI 330',
+              title: 'DoughJo',
+              course: 'COMP_SCI 394',
               location: 'Evanston, IL',
-              start: 'September 2024',
-              end: 'December 2024',
+              start: 'April 2025',
+              end: 'June 2025',
               description:
-                'Designed a user interface wireframe for a mobile app to connect with students.',
-              thumbnail: '/projects/walkies.png',
-              badges: ['Figma', 'HCI Design'],
-              liveUrl: 'https://www.figma.com/proto/pI5rea7IZ1x2JI7Ag0N2dY/HCI330-Project?node-id=20-1581&p=f&t=1yLpFM9zIRJQ0KgX-1&scaling=min-zoom&content-scaling=fixed&page-id=7%3A272',
+                'Developed a web application for home pizza makers, featuring an AI chatbot to support user guidance.',
+              thumbnail: '/projects/Doughjo.png',
+              badges: ['Google Gemini', 'React', 'Web Development', 'Prompt Engineering'],
+              liveUrl: 'https://pizza-app-394.web.app/',
               repoUrl: ''
             }}
           />
 
           <ProjectCard
-            key="Lumi‑Ride"
+            key="BugSnacks"
             project={{
-              title: 'Lumi‑Ride',
-              course: 'DSGN 106',
+              title: 'BugSnacks',
+              course: 'COMP_SCI 394',
               location: 'Evanston, IL',
-              start: 'January 2024',
-              end: 'April 2024',
+              start: 'April 2025',
+              end: 'June 2025',
               description:
-                'A wheelchair illumination device to improve the ability of cerebral palsy patients with impaired dexterity to navigate in a motorized wheelchair.',
-              thumbnail: '/projects/lumi-ride.png',
-              badges: ['Arduino', 'Autodesk Fusion 360', '3D-Printing'],
-              liveUrl: '',
+                'A service for Northwestern students to help debug one another’s projects.',
+              thumbnail: '/projects/BugSnacks.png',
+              badges: ['React', 'Web Development', 'Firebase'],
+              liveUrl: 'https://bugsnacks2.web.app/',
               repoUrl: ''
             }}
           />
 
           <ProjectCard
-            key="FrostGuard"
+            key="Newsfeed"
             project={{
-              title: 'FrostGuard',
-              course: 'DSGN 106',
+              title: 'Newsfeed',
+              course: 'COMP_SCI 303',
               location: 'Evanston, IL',
-              start: 'April 2024',
-              end: 'June 2024',
+              start: 'April 2025',
+              end: 'June 2025',
               description:
-                'Modified a chicken coop to reduce freezing in the chicken drinking system.',
-              thumbnail: '/projects/frostguard.png',
-              badges: ['Autodesk Fusion 360', '3D-Printing'],
+                'A newsfeed application that allows users to post and interact with content.',
+              thumbnail: '/projects/Newsfeed.png',
+              badges: ['Django', 'User Authentication', 'GraphQL', 'Next.js'],
               liveUrl: '',
-              repoUrl: ''
+              repoUrl: 'https://github.com/ericpolanski/newsfeed'
             }}
           />
         </div>

@@ -24,13 +24,11 @@ export default function Home() {
             <span className="underline-animate">Eric Polanski</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-500 italic mb-4">
-            Full-Stack Software Engineer
+            AI Automation & Full-Stack Software Engineer
           </p>
           <p className="text-lg leading-relaxed">
-          Experienced full-stack software engineer 
-          with the ability to design, develop, and deploy 
-          comprehensive web applications. 
-          I am dedicated to writing clean, efficient code and collaborating effectively to achieve project goals and drive business success.
+            I specialize in building intelligent, automated solutions that streamline business processes and unlock new possibilities. 
+            With a strong foundation in full-stack software engineering and a passion for AI, I design, develop, and deploy robust web applications powered by modern machine learning and automation technologies.
           </p>
           <p className="text-lg leading-relaxed">
             
