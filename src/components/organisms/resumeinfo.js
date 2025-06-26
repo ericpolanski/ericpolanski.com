@@ -60,10 +60,11 @@ export default function ResumeInfo() {
                 September 2023 - December 2025
               </p>
               <p className="text-base leading-relaxed mb-2">
-                Bachelor of Science, Computer Science, GPA 3.2/4.0 
+                Bachelor of Science, Computer Science, Major GPA 3.8/4.0 
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
                 <li>Computer Science Advisory Council Member </li>
+                <li>Computer Science Student Mentor </li>
               </ul>
             </div>
             <div key="College of Lake County">
