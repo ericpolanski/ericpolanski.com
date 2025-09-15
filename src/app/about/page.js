@@ -33,10 +33,10 @@ export default function About() {
                 In my free time, I enjoy:
               </p>
               <ul className="list-disc list-inside pl-4 space-y-1 text-base leading-relaxed">
-                <li>Traveling and exploring new countries & cultures</li>
+                <li>Traveling and exploring new countries</li>
                 <li>Biking and hiking</li>
                 <li>Studying football film</li>
-                <li>Reading books</li>
+                <li>Watching movies</li>
               </ul>
             </section>
           </div>

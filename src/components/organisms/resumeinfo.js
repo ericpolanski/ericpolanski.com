@@ -7,6 +7,20 @@ export default function ResumeInfo() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Professional Experience</h2>
           <div className="space-y-6">
+            <div key= "AI Engineer Intern 2025">
+              <h3 className="text-xl font-bold">
+                AI Engineer Intern at <span className="italic">The Paper Tube Co.</span>
+              </h3>
+              <p className="italic text-base mb-2">
+                June 2025 - September 2025, Lincolnshire, IL
+              </p>
+              <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
+                <li>Designed and deployed AI-powered automation tools to solve production bottlenecks, directly reducing team workload and improving operational efficiency.</li>
+                <li>Collaborated with departmental and administrative leaders to define project requirements and tailor AI solutions, ensuring alignment with key business objectives.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="space-y-6">
             <div key= "Bioinformatics Intern 2024">
               <h3 className="text-xl font-bold">
                 Bioinformatics Intern at <span className="italic">AbbVie</span>
@@ -60,11 +74,11 @@ export default function ResumeInfo() {
                 September 2023 - December 2025
               </p>
               <p className="text-base leading-relaxed mb-2">
-                Bachelor of Science, Computer Science, Major GPA 3.8/4.0 
+                Bachelor of Science, Computer Science, Major GPA 3.84/4.0 
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Computer Science Advisory Council Member </li>
-                <li>Computer Science Student Mentor </li>
+                <li>Computer Science Advisory Council Member</li>
+                <li>Computer Science Student Mentor</li>
               </ul>
             </div>
             <div key="College of Lake County">
@@ -75,13 +89,14 @@ export default function ResumeInfo() {
                 August 2021 - July 2023
               </p>
               <p className="text-base leading-relaxed mb-2">
-                Completed 56 credits towards Bachelor’s degree, GPA 3.9/4.0 
+                Completed 65 credits towards Bachelor’s degree, GPA 3.88/4.0 
               </p>
               <ul className="list-disc list-inside pl-4 text-base leading-relaxed space-y-1">
-                <li>Student Government President </li>
-                <li>Chess Club Founder </li>
-                <li>Phi Theta Kappa Honors Society Member </li>
-                <li>Governance Coordinating Council Member </li>
+                <li>Student Government President</li>
+                <li>Chess Club Founder & President</li>
+                <li>Phi Theta Kappa Honors Society Member</li>
+                <li>Governance Coordinating Council Member</li>
+                <li>Most Influential Student Award Recipient</li>
               </ul>
             </div>
           </div>

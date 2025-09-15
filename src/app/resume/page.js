@@ -4,7 +4,7 @@ export default function ResumePage() {
     <section className="pt-[var(--header-height)] w-full flex flex-col items-center px-4">
       <h1 className="text-4xl md:text-5xl font-bold mb-6">Resume</h1>
       <a
-        href="/eric_polanski_resume_june_2025.pdf"
+        href="/eric_polanski_resume_september_2025.pdf"
         download="Eric Polanski Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,7 +15,7 @@ export default function ResumePage() {
 
       <div className="w-full max-w-4xl h-[80vh]">
         <iframe
-          src="/eric_polanski_resume_june_2025.pdf#toolbar=0"
+          src="/eric_polanski_resume_september_2025.pdf#toolbar=0"
           className="w-full h-full border-2 border-[rgb(var(--foreground-rgb))]"
         />
       </div>

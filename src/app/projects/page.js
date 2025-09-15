@@ -37,8 +37,8 @@ export default function Projects() {
                 'Developed a web application for home pizza makers, featuring an AI chatbot to support user guidance.',
               thumbnail: '/projects/Doughjo.png',
               badges: ['Google Gemini', 'React', 'Web Development', 'Prompt Engineering'],
-              liveUrl: 'https://pizza-app-394.web.app/',
-              repoUrl: ''
+              liveUrl: '',
+              repoUrl: 'https://github.com/NU394-s2025TTh/Tribe-Z'
             }}
           />
 
