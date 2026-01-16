@@ -23,8 +23,8 @@ export default function Contact() {
       if (!res.ok) throw new Error(json.message || 'Submission failed');
       setStatus('sent');
       setForm({ name: '', email: '', message: '' });
-    } catch (err) {
-      console.error(err);
+    } catch {
+      // Error details intentionally not logged to prevent information exposure
       setStatus('error');
     }
   };
