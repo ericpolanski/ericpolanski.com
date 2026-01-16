@@ -10,20 +10,10 @@
 
 This portfolio showcases my work as an AI Engineer, highlighting:
 
-- **Professional Experience** — AI engineering roles at AbbVie and Paper Tube Co., with quantifiable impacts (90% data coverage, 40% latency reduction)
+- **Professional Experience** — AI engineering roles at AbbVie and Paper Tube Co.
 - **Technical Projects** — AI/ML applications including conversational AI, NLP pipelines, and automation systems
 - **Education** — B.S. Computer Science with AI Concentration from Northwestern University (Dec 2025)
-- **Skills** — Python, SQL, PyTorch, TensorFlow, LLMs, RAG pipelines, and full-stack development
-
-## 🗂️ Site Structure
-
-| Page                       | Description                                                                     |
-| -------------------------- | ------------------------------------------------------------------------------- |
-| **Home** (`/`)             | Hero section with professional summary, key achievements, and featured projects |
-| **About** (`/about`)       | Personal journey into AI, education background, and interests                   |
-| **Projects** (`/projects`) | Detailed project showcase organized by AI/ML and Web Development                |
-| **Resume** (`/resume`)     | Interactive resume viewer with PDF download                                     |
-| **Contact** (`/contact`)   | Contact form for inquiries and opportunities                                    |
+- **Skills** — Python, SQL, PyTorch, TensorFlow, LLMs, RAG pipelines, full-stack development & more!
 
 ## 🛠️ Tech Stack
 
@@ -32,61 +22,6 @@ This portfolio showcases my work as an AI Engineer, highlighting:
 - **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
 - **Font**: [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts)
 - **Contact Form**: [FormSubmit](https://formsubmit.co/)
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/ericpolanski/ericpolanski.com.git
-cd ericpolanski.com
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-### Available Scripts
-
-| Command           | Description                          |
-| ----------------- | ------------------------------------ |
-| `npm run dev`     | Start development server             |
-| `npm run build`   | Build for production                 |
-| `npm run start`   | Start production server              |
-| `npm run lint`    | Run ESLint                           |
-| `npm run preview` | Build and preview with Wrangler      |
-| `npm run deploy`  | Build and deploy to Cloudflare Pages |
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                    # Next.js App Router pages
-│   ├── page.js            # Home page
-│   ├── about/             # About page
-│   ├── projects/          # Projects showcase
-│   ├── resume/            # Resume viewer
-│   ├── contact/           # Contact form
-│   ├── layout.js          # Root layout with Header/Footer
-│   └── globals.css        # Global styles & CSS variables
-├── components/
-│   ├── atoms/             # Basic UI elements
-│   ├── molecules/         # Composed components
-│   └── organisms/         # Complex page sections
-├── data/
-│   └── resume.js          # Structured resume data
-└── ...
-```
 
 ## ✨ Features
 
@@ -101,7 +36,3 @@ src/
 - **Email**: ericchrispolanski@gmail.com
 - **Website**: [ericpolanski.com](https://ericpolanski.com)
 - **GitHub**: [@ericpolanski](https://github.com/ericpolanski)
-
----
-
-Built with ☕ and 🤖 by Eric Polanski
