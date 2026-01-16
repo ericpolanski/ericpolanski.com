@@ -81,6 +81,69 @@ body {
   @keyframes underline {
     to { transform: scaleX(1); }
   }
+
+  /* Fade-in animation for sections */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Staggered animation delays for list items */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primaryHover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Subtle glow effect for cards */
+  .glow-hover {
+    transition: box-shadow 0.3s ease;
+  }
+  .glow-hover:hover {
+    box-shadow: 0 0 20px rgba(var(--primary-rgb, 0, 123, 255), 0.3);
+  }
+
+  /* Timeline connector line */
+  .timeline-line {
+    position: relative;
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary), var(--primaryHover));
+  }
+
+  /* Timeline dot */
+  .timeline-dot {
+    position: relative;
+  }
+  .timeline-dot::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid rgb(var(--background-start-rgb));
+    z-index: 1;
+  }
 }
 
 @font-face {
