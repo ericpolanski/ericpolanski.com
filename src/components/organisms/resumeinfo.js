@@ -3,7 +3,7 @@ import SkillGroup from "@/components/molecules/SkillGroup";
 
 const experiences = [
   {
-    title: 'AI Data Engineer Intern',
+    title: 'AI Engineer Intern',
     company: 'AbbVie',
     location: 'North Chicago, IL',
     start: 'September 2025',
