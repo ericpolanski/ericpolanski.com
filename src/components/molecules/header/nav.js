@@ -18,6 +18,7 @@ export default function Nav() {
         >
           <NavItem href="/about" text="About" />
           <NavItem href="/projects" text="Projects" />
+          <NavItem href="/resume" text="Resume" />
           <NavItem href="/contact" text="Contact" />
           <ImageNavItem
             href="https://github.com/ericpolanski/"
